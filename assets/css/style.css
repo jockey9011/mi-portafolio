@@ -1,0 +1,153 @@
+:root {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--bgColorPage);
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 15px;
+  font-size: 60px;
+  color: var(--colorH2);
+}
+
+h3 {
+  font-size: 20px;
+  color: #ffa801;
+}
+
+h4 {
+  font-size: 30px;
+  color: #ffa801;
+}
+
+
+p {
+  text-align: justify;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: var(--colorP);
+  margin: 20px 0;
+}
+
+.section2 {
+  width: 50%;
+}
+
+
+
+
+.light-mode {
+  --bgImage: url('../img/bg2.png');
+  --colorH1: #00033a;
+  --colorNav: #00033a;
+  --colorBigBoton: #00033a;
+  --url: url('../img/milogo2.png');
+  --bgColorPage: white;
+  --colorH2: #00033a;
+  --colorContact: #00033a;
+  --colorP: #00033a;
+  --colorArrow: #00033a;
+  --bgColorFooter: #00033a;
+}
+
+.dark-mode {
+  --bgImage: url('../img/binario2.png');
+  --colorH1: white;
+  --colorNav: #00033a;
+  --colorBigBoton: #eeb30e;
+  --url: url('../img/milogo.png');
+  --bgColorPage: #04032b;
+  --colorH2: white;
+  --colorContact: #eeb30e;
+  --colorP: white;
+  --colorArrow: #eeb30e;
+  --bgColorFooter: #eeb30e;
+}
+
+/*-------------------------BOTONES-------------------------*/
+
+.botonGrande {
+  background-color: var(--colorBigBoton);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin: 50px 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.botonGrande:hover {
+  background-color: white;
+  color: #eeb30e;
+  /* border: 3px solid; */
+  transform: scale(1.05);
+  border-color: #eeb30e;
+}
+
+.botonCambioColor {
+  background-color: #eeb30e;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin: 20px 25px 20px 350px;
+  cursor: pointer;
+}
+
+.botonCambioidioma {
+  background-color: #eeb30e;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+/*---------------BOTONES DE CAMBIO DE COLOR Y CAMBIO DE IDIOMA QUE VAN DENTRO DEL MENÚ RESPONSIVE*/
+
+
+
+/*----------------BOTON FLOTANTE PARA REGRESAR AL INICIO-----------------------*/
+
+#btnBackToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 0;
+  background-color: #eeb30e;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 60px;
+}

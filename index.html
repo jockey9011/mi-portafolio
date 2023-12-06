@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonathan Rodríguez</title>
+  <link rel="shortcut icon" href="./assets/img/milogo.png" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link src="https://kit.fontawesome.com/a4234a088a.js" crossorigin="anonymous">
+  </link>
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/menu.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/projects.css">
+  <link rel="stylesheet" href="./assets/css/reviews.css">
+  <link rel="stylesheet" href="./assets/css/form.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+
+
+
+  <meta name="autor" content="Jonathan Rodríguez">
+
+  <meta name="description"
+    content="Desarrollador Full Stack, especializado en construcción de interfaces de usuarios con React y creación de API Rest con Node.js">
+
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jonathan Rodríguez | Full Stack Web Developer">
+  <meta property="og:description"
+    content="Desarrollador Full Stack, especializado en construcción de interfaces de usuarios con React y creación de API Rest con Node.js #FullStackDevelopers #DesarrolladorWeb #developers">
+
+  <meta property="og:url" content="URL_DEL_PORTAFOLIO">
+  <meta property="og:image" content="URL_DE_LA_IMAGEN">
+
+  <!-- font family -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!--EMAIL JS-->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('-ZQXBlyHwOW0rh92C')
+</script>
+
+
+</head>
+
+<body>
+
+  <div id="progress"></div>
+
+  <nav>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <span class="material-symbols-outlined" style="font-size: 40px; color: white;">
+        menu
+      </span>
+    </label>
+    <a href="#inicio"" class=" enlace"><strong><span class="simbolo">&lt; </span>Jonathan <span
+          class="simbolo">/&gt;</span></strong></a>
+    <button id="modo-btn" class="botonCambioColor" data-translate-es="Cambiar Modo"
+      data-translate-en="Change Mode">Cambiar Modo</button>
+
+    <button id="btn-translate" class="botonCambioidioma" data-translate-es="Cambiar Idioma"
+      data-translate-en="Change Language">Cambiar Idioma</button>
+    <ul>
+      <li class="active"><a href="#inicio" class="active" data-translate-es="Inicio" data-translate-en="Home">Inicio</a>
+      </li>
+      <li><a href="#aboutme" data-translate-es="Sobre Mí" data-translate-en="About Me">Sobre Mí</a></li>
+      <li><a href="#technologies" data-translate-es="Tecnologías" data-translate-en="Technologies">Tecnologías</a></li>
+      <li><a href="#projects" data-translate-es="Proyectos" data-translate-en="Projects">Proyectos</a></li>
+      <li><a href="#reviews" data-translate-es="Reseñas" data-translate-en="Reviews">Reseñas</a></li>
+      <li><a href="#contacme" data-translate-es="Contáctame" data-translate-en="Contact Me">Contáctame</a></li>
+      <li><button id="modo-btn-responsive" class="botonCambioColorResponsive" data-translate-es="Cambiar Modo"
+        data-translate-en="Change Mode">Cambiar Modo</button></li>
+        <li><button id="btn-translate-responsive" class="botonCambioIdiomaResponsive" data-translate-es="Cambiar Idioma"
+          data-translate-en="Change Language">Cambiar Idioma</button></li>
+    </ul>
+
+  </nav>
+
+  <header>
+
+    <section class="container--header" id="inicio">
+      <article class="text-section">
+        <h1>Jonathan Rodríguez</h1>
+        <strong><span id="texto" class="texto"></strong>&nbsp;<span class="texto--m">|</span></span><br>
+        <a download href="./assets/cv/cv_es.png" id="downloadCV"><button class="botonGrande" data-translate-es="Descargar CV"
+          data-translate-en="Download CV">Descargar CV</button></a>
+        <a id="contactMeBtn" href="#inicio"><button class="botonGrandeContactMe" data-translate-es="Contáctame"
+          data-translate-en="Contact Me">Contáctame</button></a>
+        </article>
+      <article class="image">
+        <img src="./assets/img/milogo.png">
+      </article>
+    </section>
+
+  </header>
+
+  <main>
+    <section class="container--aboutme">
+      <div class="div--aboutme" id="aboutme">
+        <div class="div--size">
+          <h2 data-translate-es="<Sobre Mí/>" data-translate-en="<About Me/>"><span class="simbolo">&lt; </span>Sobre
+            Mí<span class="simbolo">/&gt; </span></h2>
+        </div>
+        <article class="div--size">
+          <h4 data-translate-es="Trabajo en equipo y colaboración" data-translate-en="Team work and collaboration">
+            Trabajo en equipo y colaboración</h4>
+          <p data-translate-es="Como programador full stack, destaco por mi enfoque colaborativo. Tengo la capacidad para comunicarme eficientemente y contribuir constructivamente al equipo."
+            data-translate-en="As a full stack programmer, I stand out for my collaborative approach. I have the ability to communicate efficiently and contribute constructively to the team.">
+            Como programador full stack, destaco por mi enfoque colaborativo. Tengo la capacidad para comunicarme
+            eficientemente y contribuir constructivamente al equipo.</p>
+
+          <h4 data-translate-es="Gran Capacidad de Aprendizaje" data-translate-en="Great Learning Capacity">Gran
+            Capacidad de Aprendizaje</h4>
+          <p data-translate-es="Tengo la habilidad para aprender rápidamente y adaptarme a nuevas tecnologías. Mantengo una mentalidad de mejora continua, facilitando abordar desafíos con confianza y eficiencia."
+            data-translate-en="I have the ability to learn quickly and adapt to new technologies. I maintain a mindset of continuous improvement, making it easy to address challenges with confidence and efficiency.">
+            Tengo la habilidad para aprender rápidamente y adaptarme a nuevas tecnologías. Mantengo una mentalidad de
+            mejora continua, facilitando abordar desafíos con confianza y eficiencia.</p>
+
+          <h4 data-translate-es="Compromiso y Orientación a Resultados"
+            data-translate-en="Commitment and Results Orientation">Compromiso y Orientación a Resultados</h4>
+          <p data-translate-es="Mi compromiso se traduce en la entrega constante de resultados funcionales. Siempre busco superar las expectativas, cumplir plazos y garantizar la calidad del producto final."
+            data-translate-en="My commitment translates into the constant delivery of functional results. I always seek to exceed expectations, meet deadlines and guarantee the quality of the final product.">
+            Mi compromiso se traduce en la entrega constante de resultados funcionales. Siempre busco superar las
+            expectativas, cumplir plazos y garantizar la calidad del producto final.</p>
+
+          <h4 data-translate-es="Adaptabilidad y Pasión por la Programación"
+            data-translate-en="Adaptability and Passion for Programming">Adaptabilidad y Pasión por la Programación</h4>
+          <p data-translate-es="Cuento con la capacidad para adaptarme a entornos dinámicos y una apasionada dedicación al desarrollo de software. Mi entusiasmo impulsa no solo mi rendimiento sino también la calidad y creatividad de mis contribuciones en cada proyecto."
+            data-translate-en="I have the ability to adapt to dynamic environments and a passionate dedication to software development. My enthusiasm drives not only my performance but also the quality and creativity of my contributions to each project.">
+            Cuento con la capacidad para adaptarme a entornos dinámicos y una apasionada dedicación al desarrollo de
+            software. Mi entusiasmo impulsa no solo mi rendimiento sino también la calidad y creatividad de mis
+            contribuciones en cada proyecto.</p>
+        </article>
+
+      </div>
+
+      <ul class="ul--technologies" id="technologies">
+        <li class="div--size">
+          <h2 data-translate-es="<Tecnologías/>" data-translate-en="<Technologies/>"><span class="simbolo">&lt;
+            </span>Tecnologías<span class="simbolo">/&gt; </span></h2>
+        </li>
+        <li class="div--size">
+          <i class='bx bxl-html5'></i>
+          <h3>HTML</h3>
+        </li>
+        <li class="div--size">
+          <i class='bx bxl-css3'></i>
+          <h3>CSS</h3>
+        </li>
+        <li class="div--size">
+          <i class='bx bxl-javascript'></i>
+          <h3>JAVASCRIPT</h3>
+        </li>
+        <li class="div--size">
+          <i class='bx bxl-react'></i>
+          <h3>REACT</h3>
+        </li>
+        <li class="div--size">
+          <i class='bx bxl-nodejs'></i>
+          <h3>NODE</h3>
+        </li>
+        <li class="div--size">
+          <i class='bx bxl-git'></i>
+          <h3>GIT</h3>
+        </li>
+
+
+      </ul>
+    </section>
+
+
+    <section id="projects" class="section section--projects">
+      <h2 class="section__h2" data-translate-es="<Proyectos/>" data-translate-en="<Projects/>"><span class="simbolo">&lt;
+      </span>Proyectos<span class="simbolo">/&gt; </span></h2>
+
+      <article class='article'>
+
+        <button class='article__button left'>
+          <i class='bx bx-left-arrow-alt'></i>
+        </button>
+
+        <ul class='article__ul' id="conteiner_projects">
+          <!-- aqui se insertaran los li -->
+        </ul>
+
+        <button class="article__button rigth">
+          <i class='bx bx-right-arrow-alt'></i>
+        </button>
+
+      </article>
+    </section>
+
+
+    <section id="reviews" class="sectionReviews section--reviws ">
+      <h2 data-translate-en="<Reviews/>" data-translate-es="<Reseñas/>" class="section__h2"><span class="simbolo">&lt;
+      </span>Reseñas<span class="simbolo">/&gt; </span></h2>
+      <ul class="ul--review" id="reviews-list">
+        <!-- aqui insertaremos los li -->
+      </ul>
+    </section>
+
+    <section class="section__contact" id="contacme">
+      <h2 data-translate-es="<Contáctame/>" data-translate-en="<Contact Me/>"><span class="simbolo">&lt;
+        </span>Contáctame<span class="simbolo">/&gt; </span></h2>
+      <p data-translate-es="Estoy disponible a través de múltiples canales. Elige el que prefieras."
+        data-translate-en="I am available through multiple channels. Choose the one you prefer.">Estoy disponible a
+        través de múltiples canales. Elige el que prefieras.</p>
+      <article class="section__article--contact">
+        <a class="article__contact--a" href="tel:+573003778831" target="_blank><i class='bx bx-phone'></i></a>
+        <a class="article__contact--a" href="mailto:jsteven.261190@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+        <a class="article__contact--a" href="https://wa.me/+573003778831" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+        <a class="article__contact--a" href="https://www.linkedin.com/in/jonathan-steven-rodr%C3%ADguez-contreras-33084329b/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a class="article__contact--a" href="https://github.com/jockey9011" target="_blank"><i class='bx bxl-github'></i></a>
+      </article>
+    </section>
+
+    <label class="label__upButton">
+      <button id="btnBackToTop" onclick="scrollToTop()"><i class='bx bx-up-arrow-circle'></i></button>
+    </label>
+
+    
+    
+  </main>
+
+
+  <footer class="footer-distributed">
+
+    <article class="footer__left">
+      <h3 class="footer__title" data-translate-en="Jonathan Rodríguez" data-translate-es="Jonathan Rodríguez">Jonathan
+        Rodríguez</h3>
+      <p class="footer__description"
+        data-translate-en="Full-stack developer passionate about new technologies, committed and eager to move projects forward."
+        data-translate-es="Desarrollador Full-stack apasionado por las nuevas tecnologías, comprometido y con muchas ganas de sacar proyectos adelante.">
+        Desarrollador Full-stack apasionado por las nuevas tecnologías, comprometido y con muchas ganas de sacar proyectos adelante.
+      </p>
+    </article>
+
+    <article class="footer__center">
+      <div class="footer__icon"><i class="bx bx-map"></i></div>
+      <p class="footer__location" data-translate-en="Bogotá, Colombia" data-translate-es="Bogotá, Colombia">Bogotá,
+        Colombia</p>
+      <p class="footer__copyright" id="yearText"></p>
+    </article>
+
+    <article class="footer__right">
+      <a href="https://github.com/jockey9011" class="footer__social-icon footer__social-icon--facebook">
+        <i class='bx bxl-github'></i>
+      </a>
+      <a href="https://youtube.com/yourprofile" class="footer__social-icon footer__social-icon--twitter">
+        <i class='bx bxl-youtube'></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jonathan-steven-rodr%C3%ADguez-contreras-33084329b/" class="footer__social-icon footer__social-icon--linkedin">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+    </article>
+
+  </footer>
+
+  
+  <dialog id='dialog' class="dialog">
+    <button class="dialog__button" id="close_button">
+      <span class="material-symbols-outlined">
+        close
+      </span>
+    </button>
+
+    <form id="form" class="form--conteiner" method="post">
+
+      <label for="name" data-translate-en="Name:" data-translate-es="Nombre:" class="form__label">
+        Nombre:
+      </label>
+      <input type="text" id="name" name="name" required class="form__input">
+
+
+      <label for="email" data-translate-en="Email:" data-translate-es="Correo electronico:" class="form__label">
+        Correo electronico:
+      </label>
+      <input type="email" id="email" name="email" required class="form__input">
+
+
+      <label for="phone" data-translate-en="Phone:" data-translate-es="Teléfono:" class="form__label">
+        Teléfono:
+      </label>
+      <input type="tel" id="phone" name="phone" required class="form__input">
+
+
+      <label for="message" data-translate-en="Message:" data-translate-es="Mensaje:" class="form__label">
+        Mensaje:
+      </label>
+
+      <textarea type="text" id="message" name="message" required class="form__input form__area"> </textarea>
+
+      <button id="btn-send" type="submit" class="form__button" data-translate-en="Send"
+        data-translate-es="Enviar">Enviar</button>
+
+    </form>
+  </dialog>
+
+
+
+
+
+
+
+  <script src="./assets/js/functions.js"></script>
+
+
+
+
+
+</body>
+
+</html>
