@@ -144,39 +144,28 @@ document.addEventListener('DOMContentLoaded', function () {
 /*------------------------------------------------------------------------------------*/
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const elementsToTranslate = document.querySelectorAll('[data-translate-es]');
+    const btnChangeLanguage = document.getElementById('btn-translate-responsive');
 
-document.addEventListener('DOMContentLoaded',function(){
-    const elementsToTranaslate= document.querySelectorAll('[data-translate-es]')
-    const btnChangeLanguage = document.getElementById('btn-translate')
+    let language = 'es';
 
-    let language='es'
-
-    btnChangeLanguage.addEventListener('click', function(){
-
-        if (language==='es') {
-            
-            for(const phrase of elementsToTranaslate){
-                const translation=phrase.getAttribute('data-translate-en')
-                phrase.textContent=translation
+    btnChangeLanguage.addEventListener('click', function () {
+        if (language === 'es') {
+            for (const phrase of elementsToTranslate) {
+                const translation = phrase.getAttribute('data-translate-en');
+                phrase.textContent = translation;
             }
-            document.getElementById('downloadCV').href='../../assets/cv/cv_en.png'
-            language='en'
+            language = 'en';
         } else {
-            for(const phrase of elementsToTranaslate){
-                const translation=phrase.getAttribute('data-translate-es')
-                phrase.textContent=translation
+            for (const phrase of elementsToTranslate) {
+                const translation = phrase.getAttribute('data-translate-es');
+                phrase.textContent = translation;
             }
-            document.getElementById('downloadCV').href='../../assets/cv/cv_es.png'
-            language='es'
-        }  
-    })
-
-
-
-
-
-
-})
+            language = 'es';
+        }
+    });
+});
 
 
 /*------------------------------------------------------------------------------------*/
