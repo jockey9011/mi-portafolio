@@ -7,7 +7,7 @@ header {
 
 h1 {
   color: var(--colorH1);
-  font-size: 90px;
+  font-size: 70px;
   margin-top: 400px;
 }
 
@@ -23,7 +23,7 @@ h1 {
 
 .texto {
   color: #eeb30e;
-  font-size: 80px;
+  font-size: 60px;
 }
 
 /* Estilos para el contenedor principal */
