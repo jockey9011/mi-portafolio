@@ -307,3 +307,10 @@ li a:hover {
   }
   
 }
+
+@media (max-width: 400px) {
+  #progress {
+    top: 60px;
+  }
+  
+}
