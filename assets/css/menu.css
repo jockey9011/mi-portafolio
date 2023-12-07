@@ -301,9 +301,9 @@ li a:hover {
 
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1900px) {
   #progress {
-    top: 110px;
+    top: 90px;
   }
   
 }
