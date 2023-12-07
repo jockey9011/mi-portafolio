@@ -94,6 +94,12 @@
   text-align: center;
 }
 
+@media (max-width:2500px) {
+  .section {
+    margin-top: 700px;
+  }
+}
+
 
 
 @media (max-width:1350px) {
