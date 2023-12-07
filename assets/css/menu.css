@@ -108,6 +108,8 @@ li a:hover {
   }
 } */
 
+
+
 @media (max-width: 1350px) {
 
   #progress {
@@ -297,7 +299,18 @@ li a:hover {
   }
 
 
+}
 
+@media (max-width: 1700px) {
+  #progress {
+    top: 90px;
+  }
+  
+}
 
-
+@media (max-width: 400px) {
+  #progress {
+    top: 60px;
+  }
+  
 }

@@ -285,14 +285,12 @@
   }
 
 
+}
 
-
-  
-
-
-
-
-
-
-
+@media (max-width: 400px) {
+  .ul--technologies {
+    
+    margin-top: 1100px;
+    
+  }
 }
