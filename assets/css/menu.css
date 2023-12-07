@@ -300,17 +300,3 @@ li a:hover {
 
 
 }
-
-@media (max-width: 2500px) {
-  #progress {
-    top: 150px;
-  }
-  
-}
-
-@media (max-width: 400px) {
-  #progress {
-    top: 60px;
-  }
-  
-}
